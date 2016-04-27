@@ -20,7 +20,7 @@ class Home extends Component {
       	<div className="posts">
 
   			<div className="post banner">
-			    <h2 className="post-title">I'm a former Market Risk Manager turned Software Engineer by way of Fullstack Academy. Based in Brooklyn, NY.</h2> <h4>I'm also an avid marathoner and ultra-marathoner, world traveler, and consumer of a vast array of music. I have a passion for learning new skills and concepts then applying them to buid cool stuff! <a href="#" onClick={this.eventToggleSidebar}> Find out More</a></h4>
+			    <h2 className="post-title">I'm a former Market Risk Manager turned Software Engineer by way of Fullstack Academy. Based in Brooklyn, NY.</h2> <h4>I'm also an avid marathoner, world traveler, and consumer of a vast array of music. I have a passion for learning new skills and concepts then applying them to buid cool stuff! <a href="#" onClick={this.eventToggleSidebar}> Find out More</a></h4>
 
 			</div>
 
