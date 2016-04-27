@@ -79,6 +79,9 @@ app.get('/*', function (req, res) {
       .then(html => {
         const componentHTML = React.renderToString(InitialView);
         const initialState = store.getState();
+        if (req.url === '/') res.setHeader('Content-Type', 'text/html');
+        else if (req.url == '/static/bundle.js') res.setHeader('Content-Type', 'text/javascript');
+        else if (req.url == '/static/app.css') res.setHeader('Content-Type', 'text/css')
         res.status(200).end(renderFullPage(componentHTML,initialState,headConfig))
       })
       .catch(err => {
