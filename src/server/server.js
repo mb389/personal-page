@@ -23,7 +23,7 @@ const renderFullPage = (html, initialState) => {
       <head>
         <meta charset="utf-8">
         <title>MB Portfolio</title>
-        <link rel="stylesheet" href="/static/app.css">
+        <link rel="stylesheet" type="text/css" href="/static/app.css">
 
       </head>
       <body>
@@ -31,7 +31,7 @@ const renderFullPage = (html, initialState) => {
         <script>
           window.__INITIAL_STATE__ = ${JSON.stringify(initialState)};
         </script>
-        <script src="/static/bundle.js"></script>
+        <script type="text/javascript" src="/static/bundle.js"></script>
       </body>
     </html>
   `;
