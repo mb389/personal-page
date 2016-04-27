@@ -15,16 +15,21 @@ import configureStore from '../common/store/configureStore';
 import routes from '../common/routes';
 import packagejson from '../../package.json';
 
+const headConfig = {
+  title: '<title>MB Portfolio</title>',
+  meta: '<meta name="viewport" content="width=device-width, initial-scale=1" />',
+  link: '<link content-type="text/css" rel="stylesheet" href="/static/app.css"/>'
+}
+
 const app = express();
-const renderFullPage = (html, initialState) => {
+const renderFullPage = (html, initialState, head = headConfig) => {
   return `
     <!doctype html>
     <html>
       <head>
-        <meta charset="utf-8">
-        <title>MB Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="/static/app.css">
-
+        ${head.title}
+        ${head.meta}
+        ${head.link}
       </head>
       <body>
         <div id="root">${html}</div>
@@ -74,11 +79,11 @@ app.get('/*', function (req, res) {
       .then(html => {
         const componentHTML = React.renderToString(InitialView);
         const initialState = store.getState();
-        res.status(200).end(renderFullPage(componentHTML,initialState))
+        res.status(200).end(renderFullPage(componentHTML,initialState,headConfig))
       })
       .catch(err => {
         console.log(err)
-        res.end(renderFullPage("",{}))
+        res.end(renderFullPage("",{},{}))
       });
 
   });

@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Repos from './about/Repos';
-
 import Loader from './layout/Loader';
 import Banner from './layout/Banner';
 

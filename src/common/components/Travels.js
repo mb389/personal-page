@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 
-class Resume extends Component {
+class Travels extends Component {
 
   render () {
     return (
@@ -15,4 +15,4 @@ class Resume extends Component {
   }
 }
 
-export default Resume;
+export default Travels;
