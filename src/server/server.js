@@ -18,7 +18,7 @@ import packagejson from '../../package.json';
 const headConfig = {
   title: '<title>MB Portfolio</title>',
   meta: '<meta name="viewport" content="width=device-width, initial-scale=1" />',
-  link: '<link content-type="text/css" rel="stylesheet" href="/static/app.css"/>'
+  link: '<link type="text/css" rel="stylesheet" href="/static/app.css"/>'
 }
 
 const app = express();
