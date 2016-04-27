@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 
 class Banner extends Component {
 
@@ -6,7 +7,8 @@ class Banner extends Component {
 
     return (
 	    <div className="contact-banner">
-      		<p>Contact me at <em>callum(at)deadtrendy.co.uk</em> or call <em>07919 411 405</em></p>
+      		<p>Contact me at <em>mbushoy(at)gmail.com</em></p>
+      
       	</div>
     );
   }

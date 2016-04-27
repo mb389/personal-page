@@ -23,7 +23,7 @@ export function reposByUser(state = {
       if(action.req && action.req.data){
         data = action.req.data.sort((a,b) => {
           return new Date(b.pushed_at) - new Date(a.pushed_at);
-        });
+        }).slice(0,9);
       }
       return Object.assign({}, state, {
           isFetching: false,

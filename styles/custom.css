@@ -143,8 +143,8 @@ ul.clients li.shipserv-logo {
    color:#fff;
    padding:0.2em 1em 0.2em;
    margin:0.2em;
-   clear:both; 
-   font-style:normal; 
+   clear:both;
+   font-style:normal;
    box-shadow:1px 1px 1px #ccc;
 }
 
@@ -176,4 +176,24 @@ ul.clients li.shipserv-logo {
     color:#fff;
     font-weight:bold;
     font-style:normal;
+}
+
+ul#social {
+    padding-top: 15px;
+}
+
+ul#social li {
+    display: inline;
+}
+
+ul#social li a {
+    background-color: darkgrey;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+ul#social li a:hover {
+    background-color: orange;
 }

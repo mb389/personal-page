@@ -21,26 +21,32 @@ class Sidebar extends Component {
     	<div className="sidebar">
 
 		  <div className="sidebar-item sidebar-footer">
-		    <p>I built this site with Redux and React. You can get the <a href="https://github.com/caljrimmer/portfolio-redux-app">source code here</a></p>
+        <ul id="social">
+                         <li>
+                             <a href="http://www.github.com/mb389" className="btn-social"><i className="fa fa-fw fa-github"></i></a>
+                         </li>
+                         <li>
+                             <a href="https://www.facebook.com/michael.bushoy" className="btn-social"><i className="fa fa-fw fa-facebook"></i></a>
+                         </li>
+                         <li>
+                             <a href="https://www.linkedin.com/in/michaelbushoy" className="btn-social"><i className="fa fa-fw fa-linkedin"></i></a>
+                         </li>
+                     </ul>
 		  </div>
 
 		  <nav className="sidebar-nav">
 		    <Link to="/home" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">Home</Link>
-		    <Link to="/portfolio" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Portfolio</Link>
-		    <Link to="/services" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Services</Link>
+		    <Link to="/portfolio" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Projects</Link>
+		    <Link to="/resume" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Resume</Link>
+        <Link to="/travels" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Travels</Link>
 		    <Link to="/about" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">About</Link>
 		  </nav>
 
 		  <div className="sidebar-item sidebar-footer">
 
-		    <p>
-				Visit <a href="https://github.com/caljrimmer">My GitHub Repo</a><br/>
-				Visit <a href="https://www.linkedin.com/in/callumrimmer">My Linkedin</a><br/>
-				Visit <a href="https://twitter.com/caljrimmer">My Twitter</a><br/>
-		    </p>
 
 		    <p>
-		    	Design based on <a href="http://lanyon.getpoole.com/"> Lanyon Theme</a> 
+		    	Design based on <a href="http://lanyon.getpoole.com/"> Lanyon Theme</a>
 		    </p>
 
 		  </div>

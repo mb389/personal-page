@@ -279,7 +279,7 @@ a.sidebar-nav-item:focus {
   visibility: visible;
   -webkit-transform: translateX(14rem);
       -ms-transform: translateX(14rem);
-          transform: translateX(14rem);  
+          transform: translateX(14rem);
 }
 
 .sidebar-footer a{
@@ -296,7 +296,7 @@ a.sidebar-nav-item:focus {
 
 
 /*
- * Posts and pages
+ *  and pages
  *
  * Each post is wrapped in `.post` and is used on default and post layouts. Each
  * page is wrapped in `.page` and is only used on the page layout.

@@ -10,6 +10,7 @@ class Header extends Component {
 			    <a href="/" title="Home">Michael Bushoy</a>
 			    <small>Full Stack Web Developer based in Brooklyn, NY</small>
 			  </h3>
+      
 			</div>
 		</div>
     );

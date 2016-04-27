@@ -22,13 +22,14 @@ const renderFullPage = (html, initialState) => {
     <html>
       <head>
         <meta charset="utf-8">
-        <title>Full Stack Web Developer based in London</title>
+        <title>MB Portfolio</title>
         <link rel="stylesheet" type="text/css" href="/static/app.css">
+
       </head>
       <body>
         <div id="root">${html}</div>
         <script>
-          window.__INITIAL_STATE__ = ${JSON.stringify(initialState)}; 
+          window.__INITIAL_STATE__ = ${JSON.stringify(initialState)};
         </script>
         <script src="/static/bundle.js"></script>
       </body>
@@ -87,5 +88,5 @@ app.get('/*', function (req, res) {
 const server = app.listen(3002, function () {
   const host = server.address().address;
   const port = server.address().port;
-  console.log('Example app listening at http://%s:%s', host, port);
+  console.log('Listening at http://%s:%s', host, port);
 });
