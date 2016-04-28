@@ -20,6 +20,7 @@
 	border:1px solid #eaeaea;
 	margin-bottom:10px;
 	font-size:16px;
+	border-radius: 10px;
 }
 
 @media (max-width: 40em) {
