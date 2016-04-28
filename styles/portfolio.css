@@ -5,9 +5,10 @@
 .portfolio_item {
 	left: right;
     margin: 0 0 20px 0;
-    padding:20px 20px 0 20px;
-    box-shadow:1px 2px 2px #eaeaea;
+    padding:20px 20px 20px 20px;
+    box-shadow:1px 2px 2px #BBDEFB;
     border:1px solid #eaeaea;
+		border-radius: 5px;
 }
 
 .portfolio_item h2 {
@@ -33,7 +34,7 @@
 
 .portfolio_item .role {
     float: left;
-    color: #1db7a9;
+    color: #2196F3;
     font-size: 30px;
     font-weight: bold;
     text-transform:uppercase;
@@ -46,7 +47,7 @@
     font-size: 22px;
     font-weight: bold;
     margin: 10px;
-    color: #1db7a9;
+    color: #2196F3;
     line-height: 24px;
     text-align: right;
 }
@@ -61,16 +62,16 @@
 */
 
 .spacebook {
-	background:#fff url(assets/spacebook-logo.png) top no-repeat;
+	background:#fff url(assets/spacebook-logo.png) no-repeat;
 	background-size: 100%;
 }
 
 .brewery {
 	background:#fff url(assets/brewery-ss.png) top no-repeat;
-	background-size: 120%;
+	background-size: 98%;
 }
 
 .livepoll {
 	background:#fff url(assets/livepoll-ss.png) top no-repeat;
-	background-size: 100%;
+	background-size: 88%;
 }

@@ -20,16 +20,16 @@ class Sidebar extends Component {
 
     	<div className="sidebar">
 
-		  <div className="sidebar-item sidebar-footer">
+		  <div className="sidebar-item sidebar-header">
         <ul id="social">
                          <li>
-                             <a href="http://www.github.com/mb389" className="btn-social"><i className="fa fa-fw fa-github"></i></a>
+                             <a href="http://www.github.com/mb389" target="_blank" className="btn-social"><i className="fa fa-fw fa-github"></i></a>
                          </li>
                          <li>
-                             <a href="https://www.facebook.com/michael.bushoy" className="btn-social"><i className="fa fa-fw fa-facebook"></i></a>
+                             <a href="https://www.facebook.com/michael.bushoy" target="_blank" className="btn-social"><i className="fa fa-fw fa-facebook"></i></a>
                          </li>
                          <li>
-                             <a href="https://www.linkedin.com/in/michaelbushoy" className="btn-social"><i className="fa fa-fw fa-linkedin"></i></a>
+                             <a href="https://www.linkedin.com/in/michaelbushoy" target="_blank" className="btn-social"><i className="fa fa-fw fa-linkedin"></i></a>
                          </li>
                      </ul>
 		  </div>

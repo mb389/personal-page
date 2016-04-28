@@ -7,8 +7,8 @@ class Banner extends Component {
 
     return (
 	    <div className="contact-banner">
-      		<p>Contact me at <em>mbushoy(at)gmail.com</em></p>
-      
+      		<p>Contact me at <em><a href="mailto:mbushoy@gmail.com">mbushoy(at)gmail.com</a></em></p>
+
       	</div>
     );
   }

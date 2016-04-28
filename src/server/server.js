@@ -31,7 +31,7 @@ const renderFullPage = (html, initialState, head = headConfig) => {
         ${head.meta}
         ${head.link}
       </head>
-      <body>
+      <body class="theme-base-0d">
         <div id="root">${html}</div>
         <script>
           window.__INITIAL_STATE__ = ${JSON.stringify(initialState)};
