@@ -15,6 +15,8 @@ import configureStore from '../common/store/configureStore';
 import routes from '../common/routes';
 import packagejson from '../../package.json';
 
+process.env.BROWSER=false;
+
 const headConfig = {
   title: '<title>MB Portfolio</title>',
   meta: '<meta name="viewport" content="width=device-width, initial-scale=1" />',
