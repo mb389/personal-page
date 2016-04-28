@@ -31,6 +31,9 @@ class Sidebar extends Component {
                          <li>
                              <a href="https://www.linkedin.com/in/michaelbushoy" target="_blank" className="btn-social"><i className="fa fa-fw fa-linkedin"></i></a>
                          </li>
+                         <li>
+                             <a href="https://angel.co/mb389" target="_blank" className="btn-social"><i className="fa fa-fw fa-angellist"></i></a>
+                         </li>
                      </ul>
 		  </div>
 

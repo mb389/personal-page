@@ -29,7 +29,7 @@ class About extends Component {
 
       	  	<h3>About This Site</h3>
 
-      	  	<p>This site is a single page web app built with React and Redux, and utilizes server-side rendering, which has the advantages quicker rendering and more effect search engine indexing.</p>
+      	  	<p>This site is a single page web app built with React and Redux, and utilizes server-side rendering.</p>
 
 	      </div>
 

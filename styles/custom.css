@@ -135,6 +135,7 @@ body {
 
 ul#social {
     padding-top: 15px;
+    margin-left: -15px;
 }
 
 ul#social li {

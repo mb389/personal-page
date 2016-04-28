@@ -29,7 +29,7 @@ const middlewareBuilder = () => {
         reduxReactRouter({
           createHistory
         }),
-        // devTools()
+        devTools()
       ]
     }
   }else{

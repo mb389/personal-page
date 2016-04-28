@@ -8,10 +8,10 @@ class Resume extends Component {
       <div>
       <div className='container'>
 
-      <iframe className='resume' src="https://drive.google.com/file/d/0B_LT_rwWIdGJaG44MEdFaUQzSzQ/preview" />
+      <iframe className='resume' src="https://drive.google.com/file/d/0B_LT_rwWIdGJaG44MEdFaUQzSzQ/view?usp=sharing" />
 
       </div>
-      
+
       </div>
     );
   }
