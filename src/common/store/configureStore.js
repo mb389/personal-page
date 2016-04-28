@@ -12,7 +12,7 @@ const middlewareBuilder = () => {
   let middleware = {};
   let universalMiddleware = [thunk,promiseMiddleware];
   let allComposeElements = [];
-  
+
   if(process.browser){
     if(process.env.NODE_ENV === 'production'){
       middleware = applyMiddleware(...universalMiddleware);
@@ -29,7 +29,7 @@ const middlewareBuilder = () => {
         reduxReactRouter({
           createHistory
         }),
-        devTools()
+        // devTools()
       ]
     }
   }else{
