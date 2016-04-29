@@ -13,7 +13,7 @@ const middlewareBuilder = () => {
   let universalMiddleware = [thunk,promiseMiddleware];
   let allComposeElements = [];
 
-  if(process.browser){
+
     if(process.env.NODE_ENV === 'production'){
       middleware = applyMiddleware(...universalMiddleware);
       allComposeElements = [
@@ -28,16 +28,10 @@ const middlewareBuilder = () => {
         middleware,
         reduxReactRouter({
           createHistory
-        }),
-        devTools()
+        })
       ]
     }
-  }else{
-    middleware = applyMiddleware(...universalMiddleware);
-    allComposeElements = [
-      middleware
-    ]
-  }
+
 
   return allComposeElements;
 

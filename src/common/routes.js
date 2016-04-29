@@ -6,12 +6,13 @@ import App from "./containers/App";
 //Redux Smart
 import AboutPage from "./containers/AboutPage";
 import HomePage from "./containers/HomePage";
+import TravelsPage from "./containers/Travels";
 
 //Redux Dumb
 import PortfolioPage from "./components/Portfolio";
 import ResumePage from "./components/Resume";
 import error404 from "./components/404";
-import TravelsPage from "./components/Travels";
+
 
 export default (
   <Route name="app" path="/" component={App}>

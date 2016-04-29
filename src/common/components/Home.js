@@ -20,7 +20,7 @@ class Home extends Component {
       	<div className="posts">
 
   			<div className="post banner">
-			    <h2 className="post-title">I'm a former Market Risk Manager turned Software Engineer by way of Fullstack Academy. Based in Brooklyn, NY.</h2> <h4>I'm also an avid marathoner, world traveler, poker player, explorer of new technologies, and music obsessive. I have a passion for learning new skills and concepts then applying them to build cool stuff! <a href="#" onClick={this.eventToggleSidebar}> Click to learn more</a></h4>
+			    <h2 className="post-title">I'm a former Market Risk Manager turned Software Engineer by way of Fullstack Academy. Based in Brooklyn, NY.</h2> <h4>I'm also an avid marathoner, world traveler, poker player, explorer of tand music obsessive. I have a passion for learning new skills and concepts then applying them to build cool stuff! <a href="#" onClick={this.eventToggleSidebar}> Click to learn more</a></h4>
 
 			</div>
 
@@ -30,27 +30,24 @@ class Home extends Component {
 
 				<div className="skill-item clearfix">
 					<h4>Client Side JS</h4>
-					<ul className="">
+					<ul className="skill-list">
 						<li><em>Angular</em></li>
-						<li><em><b>*</b>React</em>
+						<li><em><b>*</b>React</em></li>
 							<ul>
 								<li><em><b>*</b>Redux</em></li>
 							</ul>
-						</li>
 						<li><em>D3</em></li>
             <li><em>socket.io</em></li>
 					</ul>
 				</div>
 
-
 				<div className="skill-item clearfix">
 					<h4>Server Side JS</h4>
-					<ul>
-						<li><em><b>*</b>Node</em>
+					<ul className="skill-list">
+						<li><em><b>*</b>Node</em></li>
 							<ul>
 								<li><em><b>*</b>Express</em></li>
 							</ul>
-
               <li><em>MongoDB</em></li>
               <ul>
                 <li><em>Mongoose</em></li>
@@ -59,7 +56,6 @@ class Home extends Component {
                 <ul>
                   <li><em>Sequelize</em></li>
                 </ul>
-						</li>
 					</ul>
 				</div>
 

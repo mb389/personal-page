@@ -6,6 +6,7 @@ import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 
 import React from 'react';
+import ReactDOM from 'react-dom/server';
 import { RoutingContext, match } from 'react-router';
 import { Provider } from 'react-redux';
 import createLocation from 'history/lib/createLocation';
@@ -38,6 +39,7 @@ const renderFullPage = (html, initialState, head = headConfig) => {
         <script>
           window.__INITIAL_STATE__ = ${JSON.stringify(initialState)};
         </script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script type="text/javascript" src="/static/bundle.js"></script>
       </body>
     </html>
@@ -70,16 +72,16 @@ app.get('/*', function (req, res) {
 
     const InitialView = (
       <Provider store={store}>
-        {() =>
+
           <RoutingContext {...renderProps} />
-        }
+
       </Provider>
     );
 
     //This method waits for all render component promises to resolve before returning to browser
     fetchComponentDataBeforeRender(store.dispatch, renderProps.components, renderProps.params)
       .then(html => {
-        const componentHTML = React.renderToString(InitialView);
+        const componentHTML = ReactDOM.renderToString(InitialView);
         const initialState = store.getState();
         if (req.url === '/') res.setHeader('Content-Type', 'text/html');
         else if (req.url == '/static/bundle.js') res.setHeader('Content-Type', 'text/javascript');

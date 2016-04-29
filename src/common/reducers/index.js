@@ -3,12 +3,14 @@ import { routerStateReducer } from 'redux-router';
 
 import layout from './layout';
 import { reposByUser } from './about';
+import travels from './travels';
 
 
 const rootReducer = combineReducers({
-  layout : layout,
+  layout,
   repos : reposByUser,
-  router : routerStateReducer
+  router : routerStateReducer,
+  travels
 });
 
 export default rootReducer;
