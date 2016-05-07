@@ -2,6 +2,7 @@ import React, { PropTypes, Component } from "react";
 import GoogleMap from 'google-map-react';
 import MyGreatPlace from './Place';
 import {K_SIZE} from './PlaceStyles';
+import {getTravelLocations} from '../../api/travelLocations';
 import controllable from 'react-controllables';
 
 @controllable(['center', 'zoom', 'hoverKey', 'clickKey'])
@@ -15,21 +16,30 @@ export default class TravelMap extends Component {
     this._onChildMouseLeave=this._onChildMouseLeave.bind(this);
   }
 
+  componentWillMount() {
+    this.setState({hover: false})
+  }
+
   _onChange (center, zoom /* , bounds, marginBounds */) {
+    console.log("onchange")
    this.props.onCenterChange(center);
    this.props.onZoomChange(zoom);
  }
 
  _onChildClick (key, childProps) {
-   this.props.onCenterChange([childProps.lat, childProps.lng]);
+   console.log(childProps)
+  //  this.props.onCenterChange([childProps.lat, childProps.lng]);
+
  }
 
  _onChildMouseEnter (key /*, childProps */) {
-   this.props.onHoverKeyChange(key);
+  //  this.props.onHoverKeyChange(key);
+   this.setState({hover: key})
  }
 
  _onChildMouseLeave (/* key, childProps */) {
-   this.props.onHoverKeyChange(null);
+  //  this.props.onHoverKeyChange(null);
+  this.setState({hover: false})
  }
 
   render() {
@@ -37,19 +47,19 @@ export default class TravelMap extends Component {
     const places = this.props.greatPlaces
     .map(place => {
       const {id, ...coords} = place;
-      console.log(this.props.hoverKey)
+      console.log(this.state)
       return (
         <MyGreatPlace
           key={id}
           {...coords}
           text={id}
           // use your hover state (from store, react-controllables etc...)
-          hover={this.props.hoverKey === id} />
+          hover={this.state.hover === id} />
       );
     });
 
     return (
-      <div style={{height: "500px"}}>
+      <div style={{height: "800px", width: "800px"}}>
        <GoogleMap
          center={this.props.center}
          zoom={this.props.zoom}
@@ -68,11 +78,8 @@ export default class TravelMap extends Component {
 
 TravelMap.defaultProps = {
   center: [59.838043, 30.337157],
-    zoom: 9,
-    greatPlaces: [
-      {id: 'A', lat: 59.955413, lng: 30.337844},
-      {id: 'B', lat: 59.724, lng: 30.080}
-    ]
+    zoom: 1,
+    greatPlaces: getTravelLocations()
 };
 
 
@@ -83,6 +90,6 @@ TravelMap.propTypes = {
     clickKey: PropTypes.string, // @controllable
     onCenterChange: PropTypes.func, // @controllable generated fn
     onZoomChange: PropTypes.func, // @controllable generated fn
-    onHoverKeyChange: PropTypes.func, // @controllable generated fn
+    // onHoverKeyChange: PropTypes.func, // @controllable generated fn
     greatPlaces: PropTypes.array
 }
