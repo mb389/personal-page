@@ -77,3 +77,20 @@
 //
 //   .map-marker-hint__content--visible
 //     height: 61px
+
+.hint__content {
+  margin-top: -46px;
+  margin-left: -25px;
+  width: 75px;
+  font-weight: normal;
+  background-color: white;
+  color: #3f51b5;
+  border: 1px solid #f44336;
+  position: relative;
+  z-index: 9999;
+  transition: width 2s, height 2s, background-color 1s ease;
+}
+
+#main__map {
+
+}

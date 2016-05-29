@@ -4,6 +4,7 @@ import MyGreatPlace from './Place';
 import {K_SIZE} from './PlaceStyles';
 import {getTravelLocations} from '../../api/travelLocations';
 import controllable from 'react-controllables';
+import { fitBounds } from 'google-map-react/utils';
 
 @controllable(['center', 'zoom', 'hoverKey', 'clickKey'])
 export default class TravelMap extends Component {
@@ -17,54 +18,55 @@ export default class TravelMap extends Component {
   }
 
   componentWillMount() {
-    this.setState({hover: false})
+    this.setState({hover: false,
+      center: [35.4279, 70.3],
+        zoom: 1})
   }
 
-  _onChange (center, zoom /* , bounds, marginBounds */) {
-    console.log("onchange")
-   this.props.onCenterChange(center);
-   this.props.onZoomChange(zoom);
+  _onChange (obj) {
+    console.log("onchange",obj)
+    this.setState({ center: obj.center, zoom: obj.zoom})
+
  }
 
  _onChildClick (key, childProps) {
    console.log(childProps)
-  //  this.props.onCenterChange([childProps.lat, childProps.lng]);
-
+   this.setState({center: [childProps.lat, childProps.lng], zoom: 5});
  }
 
  _onChildMouseEnter (key /*, childProps */) {
-  //  this.props.onHoverKeyChange(key);
    this.setState({hover: key})
  }
 
  _onChildMouseLeave (/* key, childProps */) {
-  //  this.props.onHoverKeyChange(null);
-  this.setState({hover: false})
+    this.setState({hover: false})
  }
 
   render() {
 
     const places = this.props.greatPlaces
     .map(place => {
-      const {id, ...coords} = place;
-      console.log(this.state)
+      const {id, name, ...coords} = place;
       return (
         <MyGreatPlace
           key={id}
           {...coords}
           text={id}
-          // use your hover state (from store, react-controllables etc...)
+          name={name}
           hover={this.state.hover === id} />
       );
     });
 
+    const { initialCenter, ...restProps } = this.props;
+    const { zoom, center } = this.state;
+
     return (
-      <div style={{height: "800px", width: "800px"}}>
+      <div style={{height: "800px", width: "1000px"}}>
        <GoogleMap
-         center={this.props.center}
-         zoom={this.props.zoom}
+         center={center}
+         zoom={zoom}
          hoverDistance={K_SIZE / 2}
-         onBoundsChange={this._onBoundsChange}
+         onChange={this._onChange}
          onChildClick={this._onChildClick}
          onChildMouseEnter={this._onChildMouseEnter}
          onChildMouseLeave={this._onChildMouseLeave}
@@ -76,20 +78,20 @@ export default class TravelMap extends Component {
   }
 }
 
-TravelMap.defaultProps = {
-  center: [59.838043, 30.337157],
-    zoom: 1,
-    greatPlaces: getTravelLocations()
-};
+ TravelMap.defaultProps = {
+  //  center: [35.4279, 70.3],
+  //    zoom: 1,
+     greatPlaces: getTravelLocations()
+ };
 
 
 TravelMap.propTypes = {
-    center: PropTypes.array, // @controllable
-    zoom: PropTypes.number, // @controllable
-    hoverKey: PropTypes.string, // @controllable
-    clickKey: PropTypes.string, // @controllable
-    onCenterChange: PropTypes.func, // @controllable generated fn
-    onZoomChange: PropTypes.func, // @controllable generated fn
+    // center: PropTypes.array, // @controllable
+    // zoom: PropTypes.number, // @controllable
+    // hoverKey: PropTypes.string, // @controllable
+    // clickKey: PropTypes.string, // @controllable
+  //  onCenterChange: PropTypes.func, // @controllable generated fn
+  //  onZoomChange: PropTypes.func, // @controllable generated fn
     // onHoverKeyChange: PropTypes.func, // @controllable generated fn
     greatPlaces: PropTypes.array
 }

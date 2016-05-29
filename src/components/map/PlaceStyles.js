@@ -1,4 +1,4 @@
-const K_SIZE = 40;
+const K_SIZE = 30;
 
 const greatPlaceStyle = {
   // initially any map object has left top corner at lat lng coordinates
@@ -14,9 +14,9 @@ const greatPlaceStyle = {
   backgroundColor: 'white',
   textAlign: 'center',
   color: '#3f51b5',
-  fontSize: 16,
+  fontSize: 12,
   fontWeight: 'bold',
-  padding: 4,
+  padding: 2,
   cursor: 'pointer'
 };
 
