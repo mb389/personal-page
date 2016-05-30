@@ -9,11 +9,10 @@ export default class MyGreatPlace extends Component {
 
   render() {
     const style = this.props.hover ? greatPlaceStyleHover : greatPlaceStyle;
-  
+
     return (
        <div className="hint hint--html hint--info hint--top" style={style}>
-          <div>{this.props.text}</div>
-
+          {/*<div>{this.props.id}</div>*/}
           {this.props.hover ? <div className="hint__content">{this.props.name}</div> : ''}
        </div>
     );
@@ -22,5 +21,6 @@ export default class MyGreatPlace extends Component {
 
 MyGreatPlace.propTypes = {
   hover: PropTypes.bool,
-  text: PropTypes.string
+  name: PropTypes.string,
+  id: PropTypes.string
 };

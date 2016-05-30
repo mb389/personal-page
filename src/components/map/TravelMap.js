@@ -4,7 +4,6 @@ import MyGreatPlace from './Place';
 import {K_SIZE} from './PlaceStyles';
 import {getTravelLocations} from '../../api/travelLocations';
 import controllable from 'react-controllables';
-import { fitBounds } from 'google-map-react/utils';
 
 @controllable(['center', 'zoom', 'hoverKey', 'clickKey'])
 export default class TravelMap extends Component {
@@ -19,14 +18,13 @@ export default class TravelMap extends Component {
 
   componentWillMount() {
     this.setState({hover: false,
-      center: [35.4279, 70.3],
-        zoom: 1})
+      center: [48.9, 2.3],
+        zoom: 2})
   }
 
   _onChange (obj) {
     console.log("onchange",obj)
     this.setState({ center: obj.center, zoom: obj.zoom})
-
  }
 
  _onChildClick (key, childProps) {
@@ -43,25 +41,22 @@ export default class TravelMap extends Component {
  }
 
   render() {
-
     const places = this.props.greatPlaces
     .map(place => {
       const {id, name, ...coords} = place;
       return (
         <MyGreatPlace
           key={id}
+          id={id.toString()}
           {...coords}
-          text={id}
           name={name}
-          hover={this.state.hover === id} />
+          hover={this.state.hover == id} />
       );
     });
 
-    const { initialCenter, ...restProps } = this.props;
     const { zoom, center } = this.state;
-
     return (
-      <div style={{height: "800px", width: "1000px"}}>
+      <div className="main__map" >
        <GoogleMap
          center={center}
          zoom={zoom}
@@ -78,20 +73,10 @@ export default class TravelMap extends Component {
   }
 }
 
- TravelMap.defaultProps = {
-  //  center: [35.4279, 70.3],
-  //    zoom: 1,
-     greatPlaces: getTravelLocations()
- };
-
+TravelMap.defaultProps = {
+   greatPlaces: getTravelLocations()
+};
 
 TravelMap.propTypes = {
-    // center: PropTypes.array, // @controllable
-    // zoom: PropTypes.number, // @controllable
-    // hoverKey: PropTypes.string, // @controllable
-    // clickKey: PropTypes.string, // @controllable
-  //  onCenterChange: PropTypes.func, // @controllable generated fn
-  //  onZoomChange: PropTypes.func, // @controllable generated fn
-    // onHoverKeyChange: PropTypes.func, // @controllable generated fn
     greatPlaces: PropTypes.array
 }
