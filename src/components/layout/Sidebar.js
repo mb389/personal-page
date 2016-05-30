@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import classNames from 'classnames';
-import 'font-awesome/scss/font-awesome.scss';
+// import 'font-awesome/scss/font-awesome.scss';
 
 class Sidebar extends Component {
-
 
   constructor(props){
 	  super(props);
