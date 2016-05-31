@@ -8,7 +8,7 @@ import historyApiFallback from 'connect-history-api-fallback';
 browserSync({
   port: process.env.PORT || 3000,
   ui: {
-    port: 3001
+    port: process.env.PORT || 3001
   },
   server: {
     baseDir: 'dist'
