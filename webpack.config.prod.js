@@ -21,38 +21,26 @@ export default {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin(GLOBALS), //Tells React to build in prod mode. https://facebook.github.io/react/downloads.html
-    new ExtractTextPlugin('styles.css'),
+    // new ExtractTextPlugin('styles.css'),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin()
   ],
   module: {
-    loaders: [
-      {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
-      {test: /\.(jpe?g|png|gif|svg)$/i, loaders: ['file']},
-      {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'},
-      {
-        test: /(\.css|\.scss)$/,
-        include: path.join(__dirname, 'src'),
-        loader: ExtractTextPlugin.extract("css?sourceMap!sass?sourceMap")
+          loaders:
+          [
+            {test: /\.js?$/, loader: 'babel-loader?cacheDirectory', exclude: /(node_modules|bower_components)/ },
+            {test: /\.jsx?$/, loader: 'babel-loader?cacheDirectory', exclude: /(node_modules|bower_components)/ },
+            {test: /(\.css|\.scss)$/, loaders: ['style', 'css', 'sass']},
+            {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader?mimetype=image/svg+xml'},
+            {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader?mimetype=application/font-woff"},
+            {test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader?mimetype=application/font-woff"},
+            {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader?mimetype=application/octet-stream"},
+            {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'},
+            {test: /\.(jpe?g|png|gif)$/i, loaders: ['file']},
+            {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file-loader"},
+        ]
       },
-      {
-      test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-      loader: "url?limit=10000&mimetype=application/font-woff"
-    }, {
-      test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-      loader: "url?limit=10000&mimetype=application/font-woff"
-    }, {
-      test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-      loader: "url?limit=10000&mimetype=application/octet-stream"
-    }, {
-      test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-      loader: "file"
-      }
-    // , {
-    //   test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-    //   loader: "url?limit=10000&mimetype=image/svg+xml"
-    // }
-
-  ]
+resolve: {
+    extensions: ['', '.js', '.jsx', '.css', '.scss', '.sass']
 }
 };

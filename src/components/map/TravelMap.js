@@ -23,12 +23,10 @@ export default class TravelMap extends Component {
   }
 
   _onChange (obj) {
-    console.log("onchange",obj)
     this.setState({ center: obj.center, zoom: obj.zoom})
  }
 
  _onChildClick (key, childProps) {
-   console.log(childProps)
    this.setState({center: [childProps.lat, childProps.lng], zoom: 5});
  }
 

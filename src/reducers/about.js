@@ -20,7 +20,6 @@ export function reposByUser(state = {
       });
     case REPOS_GET_SUCCESS:
       let data = [];
-      console.log("here!",action)
       if(action.req && action.req.data){
         data = action.req.data.sort((a,b) => {
           return new Date(b.pushed_at) - new Date(a.pushed_at);
