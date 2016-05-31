@@ -2,6 +2,7 @@ export function getPortfolio() {
   return [
     {
     	link : 'https://spacebookapp.herokuapp.com',
+      repo: 'http://github.com/mb389/projectcamo',
     	title : 'SpaceBook',
     	classname : 'spacebook',
     	roles : [
@@ -17,6 +18,7 @@ export function getPortfolio() {
     },
     {
     	link : 'http://brewerybros.herokuapp.com',
+      repo: 'http://github.com/mb389/brewery',
     	title : 'Brewery',
     	classname : 'brewery',
     	roles : [
@@ -32,6 +34,7 @@ export function getPortfolio() {
     },
     {
     	link : 'http://shielded-stream-27779.herokuapp.com/',
+      repo: 'http://github.com/mb389/livepoll',
     	title : 'livepoll',
     	classname : 'livepoll',
     	roles : [

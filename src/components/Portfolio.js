@@ -23,7 +23,7 @@ class Portfolio extends Component {
     	const classname = classNames('portfolio_item','clearfix',row.classname);
         return (
             <div key={row.title} className={classname}>
-				<h2><a href={row.link} target="_blank">(visit site)</a> {row.title}</h2>
+				<h2><a href={row.link} target="_blank">(visit site) </a><a href={row.repo} target="_blank">(visit repo)</a> {row.title}</h2>
 				{RoleRows(row.roles)}
 			</div>
         )
