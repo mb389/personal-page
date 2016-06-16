@@ -7,7 +7,7 @@ class Travels extends Component {
     return (
       <div>
         <TravelMap />
-      <a href="https://www.flickr.com/photos/141547813@N08/albums/72157665334686983" title="World Travels">A few snapshots...</a>
+      <a href="https://www.flickr.com/photos/141547813@N08/albums/72157665334686983" target="_blank" title="World Travels">A few snapshots...</a>
     </div>
     );
   }

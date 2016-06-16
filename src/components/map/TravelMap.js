@@ -53,20 +53,21 @@ export default class TravelMap extends Component {
     });
 
     const { zoom, center } = this.state;
-    return (
-      <div className="main__map" >
-       <GoogleMap
-         center={center}
-         zoom={zoom}
-         hoverDistance={K_SIZE / 2}
-         onChange={this._onChange}
-         onChildClick={this._onChildClick}
-         onChildMouseEnter={this._onChildMouseEnter}
-         onChildMouseLeave={this._onChildMouseLeave}
-        >
-        {places}
-      </GoogleMap>
-    </div>
+
+      return (
+        <div className="main__map" >
+         <GoogleMap
+           center={center}
+           zoom={zoom}
+           hoverDistance={K_SIZE / 2}
+           onChange={this._onChange}
+           onChildClick={this._onChildClick}
+           onChildMouseEnter={this._onChildMouseEnter}
+           onChildMouseLeave={this._onChildMouseLeave}
+          >
+          {places}
+        </GoogleMap>
+      </div>
     );
   }
 }
