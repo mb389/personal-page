@@ -1,4 +1,4 @@
-# Portfolio App
+# MB Portfolio App
 
 
 ## Development Installation
@@ -13,7 +13,7 @@ $ npm start
 Then Visit
 
 ```
-http://localhost:3002
+http://localhost:3000
 ```
 
 ## Releasing to Production
@@ -24,7 +24,6 @@ In the project's directory, run the following commands:
 
 ```
 $ npm run build
-$ npm run start-prod
 ```
 
 Then Visit
@@ -33,10 +32,6 @@ Then Visit
 http://localhost:3002
 ```
 
-## Based on
-
-[Portfolio Redux App by Callum Rimmer](https://github.com/caljrimmer/portfolio-redux-app)
-
 ## Credit
 
-App template was based on [Lanyon Theme](https://github.com/poole/lanyon) by [mdo](https://github.com/mdo)
+App template was based on [Portfolio Redux App by Callum Rimmer](https://github.com/caljrimmer/portfolio-redux-app) and [Lanyon Theme](https://github.com/poole/lanyon) by [mdo](https://github.com/mdo)
