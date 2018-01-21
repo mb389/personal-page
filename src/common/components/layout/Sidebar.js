@@ -22,19 +22,19 @@ class Sidebar extends Component {
 
 		  <div className="sidebar-item sidebar-header">
         <ul id="social">
-                         <li>
-                             <a href="http://www.github.com/mb389" target="_blank" className="btn-social"><i className="fa fa-fw fa-github"></i></a>
-                         </li>
-                         <li>
-                             <a href="https://www.facebook.com/michael.bushoy" target="_blank" className="btn-social"><i className="fa fa-fw fa-facebook"></i></a>
-                         </li>
-                         <li>
-                             <a href="https://www.linkedin.com/in/michaelbushoy" target="_blank" className="btn-social"><i className="fa fa-fw fa-linkedin"></i></a>
-                         </li>
-                         <li>
-                             <a href="https://angel.co/mb389" target="_blank" className="btn-social"><i className="fa fa-fw fa-angellist"></i></a>
-                         </li>
-                     </ul>
+           <li>
+               <a href="http://www.github.com/mb389" target="_blank" className="btn-social"><i className="fa fa-fw fa-github"></i></a>
+           </li>
+           <li>
+               <a href="https://www.facebook.com/michael.bushoy" target="_blank" className="btn-social"><i className="fa fa-fw fa-facebook"></i></a>
+           </li>
+           <li>
+               <a href="https://www.linkedin.com/in/michaelbushoy" target="_blank" className="btn-social"><i className="fa fa-fw fa-linkedin"></i></a>
+           </li>
+           <li>
+               <a href="https://angel.co/mb389" target="_blank" className="btn-social"><i className="fa fa-fw fa-angellist"></i></a>
+           </li>
+       </ul>
 		  </div>
 
 		  <nav className="sidebar-nav">
@@ -47,10 +47,6 @@ class Sidebar extends Component {
 
 		  <div className="sidebar-item sidebar-footer">
 
-
-		    <p>
-		    	Design based on <a href="http://lanyon.getpoole.com/"> Lanyon Theme</a>
-		    </p>
 
 		  </div>
 

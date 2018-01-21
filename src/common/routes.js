@@ -6,7 +6,7 @@ import App from "./containers/App";
 //Redux Smart
 import AboutPage from "./containers/AboutPage";
 import HomePage from "./containers/HomePage";
-import TravelsPage from "./containers/Travels";
+// import TravelsPage from "./containers/Travels";
 
 //Redux Dumb
 import PortfolioPage from "./components/Portfolio";
@@ -19,7 +19,7 @@ export default (
       <Route path="home" component={HomePage} />
       <Route path="portfolio" component={PortfolioPage} />
       <Route path="resume" component={ResumePage} />
-      <Route path="travels" component={TravelsPage} />
+      {/*<Route path="travels" component={TravelsPage} />*/}
       <Route path="about" component={AboutPage} />
       <Route path="*" component={error404}/>
   </Route>

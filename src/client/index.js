@@ -11,11 +11,10 @@ import createBrowserHistory from 'history/lib/createBrowserHistory'
 import configureStore from '../common/store/configureStore';
 import routes from '../common/routes';
 
-// if (process.env.BROWSER) {
-// import 'bootstrap/dist/css/bootstrap.css';
+
 import 'font-awesome/css/font-awesome.css';
 import "../../styles/index.css";
-// }
+
 
 const history = createBrowserHistory();
 const initialState = window.__INITIAL_STATE__;

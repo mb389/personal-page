@@ -13,27 +13,25 @@ const middlewareBuilder = () => {
   let universalMiddleware = [thunk,promiseMiddleware];
   let allComposeElements = [];
 
+  if(process.env.NODE_ENV === 'production'){
+    middleware = applyMiddleware(...universalMiddleware);
+    allComposeElements = [
+      middleware,
+      reduxReactRouter({
+        createHistory
+      })
+    ]
+  }else{
+    middleware = applyMiddleware(...universalMiddleware,createLogger());
+    allComposeElements = [
+      middleware,
+      reduxReactRouter({
+        createHistory
+      })
+    ]
+  }
 
-    if(process.env.NODE_ENV === 'production'){
-      middleware = applyMiddleware(...universalMiddleware);
-      allComposeElements = [
-        middleware,
-        reduxReactRouter({
-          createHistory
-        })
-      ]
-    }else{
-      middleware = applyMiddleware(...universalMiddleware,createLogger());
-      allComposeElements = [
-        middleware,
-        reduxReactRouter({
-          createHistory
-        })
-      ]
-    }
-
-
-  return allComposeElements;
+    return allComposeElements;
 
 }
 
