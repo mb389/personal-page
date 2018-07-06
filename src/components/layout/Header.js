@@ -4,15 +4,14 @@ class Header extends Component {
 
   render() {
     return (
-    <div className="masthead">
-			<div className="container">
-			  <h3 className="masthead-title">
-			    <a href="/" title="Home">Michael Bushoy</a>
-			    <small>[Full Stack Software Engineer Based in Brooklyn, NY]</small>
-			  </h3>
-
-			</div>
-		</div>
+      <div className="masthead">
+        <div className="container">
+          <h3 className="masthead-title">
+            <a href="/" title="Home">Michael Bushoy</a>
+            <small>[Full Stack Software Engineer Based in Brooklyn, NY]</small>
+          </h3>
+        </div>
+      </div>
     );
   }
 }
