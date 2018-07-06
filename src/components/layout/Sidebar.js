@@ -15,11 +15,8 @@ class Sidebar extends Component {
   }
 
   render() {
-
     return (
-
       <div className="sidebar">
-
       <div className="sidebar-item sidebar-header">
         <ul id="social">
          <li>
@@ -36,20 +33,15 @@ class Sidebar extends Component {
          </li>
        </ul>
       </div>
-
       <nav className="sidebar-nav">
-        <Link to="/" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">Home</Link>
+        <Link to="/" className="sidebar-nav-item" onClick={this.eventCloseSidebar}>Home</Link>
         <Link to="/portfolio" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Projects</Link>
         <Link to="/resume" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Resume</Link>
         <Link to="/travels" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">My Travels</Link>
         <Link to="/about" className="sidebar-nav-item" onClick={this.eventCloseSidebar} activeClassName="active">About Me</Link>
       </nav>
-
       <div className="sidebar-item sidebar-footer">
-
-
       </div>
-
     </div>
     );
   }
