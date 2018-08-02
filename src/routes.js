@@ -13,16 +13,16 @@ import PortfolioPage from "./components/Portfolio";
 import ResumePage from "./components/Resume";
 import NotFoundPage from "./components/NotFoundPage";
 
-import TravelMap from './components/map/TravelMap';
+import TravelMap from "./components/map/TravelMap";
 
 export default (
   <Route name="app" path="/" component={App}>
-      <IndexRoute component={HomePage} />
-      <Route path="portfolio" component={PortfolioPage} />
-      <Route path="resume" component={ResumePage} />
-      <Route path="travels" component={TravelsPage} />
-      <Route path="map" component={TravelMap} />
-      <Route path="about" component={AboutPage} />
-      <Route path="*" component={NotFoundPage}/>
+    <IndexRoute component={HomePage} />
+    <Route path="portfolio" component={PortfolioPage} />
+    <Route path="resume" component={ResumePage} />
+    <Route path="travels" component={TravelsPage} />
+    <Route path="map" component={TravelMap} />
+    <Route path="about" component={AboutPage} />
+    <Route path="*" component={NotFoundPage}/>
   </Route>
 );

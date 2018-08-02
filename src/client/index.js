@@ -23,9 +23,9 @@ const rootElement = document.getElementById('root');
 
 ReactDOM.render(
   <Provider store={store}>
-          <Router history={history} >
-          {routes}
-        </Router>
+    <Router history={history} >
+      {routes}
+    </Router>
   </Provider>,
   rootElement
 );
