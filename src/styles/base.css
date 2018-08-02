@@ -368,9 +368,6 @@ tbody tr:nth-child(odd) th {
   color: inherit;
 }
 
-
-
-
 .clearfix:after {
    visibility: hidden;
    display: block;

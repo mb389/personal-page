@@ -96,7 +96,7 @@ class Home extends Component {
         </div>
 
         <div className="exclaimation">
-          <em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/mb389/portfolio-react-redux">github repo here</a>.</em><br/>
+          <em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/mb389/portfolio-react-redux" rel="noopener" target="_blank">github repo here</a>.</em><br/>
         </div>
 
         </div>

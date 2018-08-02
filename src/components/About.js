@@ -23,12 +23,12 @@ class About extends Component {
           <p>
             Born in Moldova and raised in Needham, MA, I've been living in NYC
             since graduating from{" "}
-            <a href="http://www.cornell.edu" target="_blank">
+            <a href="http://www.cornell.edu" rel="noopener" target="_blank">
               Cornell University
             </a>{" "}
             in 2007. After completing a major in Industrial Relations &
             Economics, I joined{" "}
-            <a href="http://www.jpmorgan.com" target="_blank">
+            <a href="http://www.jpmorgan.com" rel="noopener" target="_blank">
               J.P. Morgan
             </a>{" "}
             as an Internal Consulting Analyst, 2 years later transitioning into
@@ -38,7 +38,7 @@ class About extends Component {
           <p>
             After 8 years at J.P. Morgan, I chose to leave to pursue my passion
             for technology, shortly thereafter enrolling at{" "}
-            <a href="http://www.fullstackacademy.com" target="_blank">
+            <a href="http://www.fullstackacademy.com" rel="noopener" target="_blank">
               Fullstack Academy of Code
             </a>, a 17-week immersive program focusing on JavaScript and the
             MEAN stack.{" "}
@@ -46,7 +46,7 @@ class About extends Component {
 
           <p>
             Upon completing Fullstack, I joined{" "}
-            <a href="http://irisvr.com" target="_blank">
+            <a href="http://irisvr.com" rel="noopener" target="_blank">
               IrisVR
             </a>, a company seeking to help architects view 3D models in VR,
             where I primarily worked on the Scope Library, a web-based tool for
@@ -54,7 +54,7 @@ class About extends Component {
           </p>
           <p>
             I'm currently a full stack software engineer at{" "}
-            <a href="http://staydomio.com" target="_blank">
+            <a href="http://staydomio.com" rel="noopener" target="_blank">
               Domio
             </a>, a tech start-up seeking to reinvent the alternative lodging
             space.
@@ -63,7 +63,7 @@ class About extends Component {
 
         <div className="repos">
           <h3>
-            <a href="https://github.com/mb389?tab=repositories" target="_blank">
+            <a href="https://github.com/mb389?tab=repositories" rel="noopener" target="_blank">
               My Latest GitHub Repos
             </a>
           </h3>

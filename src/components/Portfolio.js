@@ -25,10 +25,10 @@ class Portfolio extends Component {
       return (
         <div key={row.title} className={classname}>
           <h2>
-            <a href={row.link} target="_blank">
+            <a href={row.link} rel="noopener" target="_blank">
               (visit site){" "}
             </a>
-            <a href={row.repo} target="_blank">
+            <a href={row.repo} rel="noopener" target="_blank">
               (visit repo)
             </a>{" "}
             {row.title}
