@@ -1,5 +1,5 @@
 .sidebar-item p b {
-   color:#fff;
+  color: #fff;
 }
 
 /**
@@ -7,8 +7,12 @@
 */
 
 @keyframes pulse {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 body {
@@ -38,13 +42,12 @@ body {
   height: 35%;
   width: 35%;
   animation: pulse 0.75s ease-in infinite alternate;
-  background-color: #1976D2;
+  background-color: #1976d2;
 }
 
 .an_delay {
   animation-delay: 0.75s;
 }
-
 
 /**
 * Skill Boxes on Home Page
@@ -55,63 +58,61 @@ body {
 }
 
 .skill-item {
-   float:left;
-   margin: 0 3.5em 2em 0;
-   font-size:0.8em;
+  float: left;
+  margin: 0 3.5em 2em 0;
+  font-size: 0.8em;
 }
 
 .skill-item h4 {
-   /*font-size:20px;*/
-   font-weight:bold;
+  /*font-size:20px;*/
+  font-weight: bold;
 }
 
 .posts em b {
-   font-weight:bold;
-   margin-right:5px;
-   margin-left:-5px;
-   text-shadow:1px 1px 1px #666;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-left: -5px;
+  text-shadow: 1px 1px 1px #666;
 }
 
-.skill-item ul{
-   list-style:none;
-   padding-left:0;
-   font-size:16px;
+.skill-item ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
 }
 
 .skill-item ul li {
-   display:inline-block;
-   float:left;
-   clear:both;
+  display: inline-block;
+  float: left;
+  clear: both;
 }
 
 .skill-item ul ul {
-   padding-left:2em;
+  padding-left: 2em;
 }
 
 .skill-item ul li em {
-   background: #1976D2;
-   display:inline-block;
-   float:left;
-   color:#fff;
-   padding:0.2em 1em 0.2em;
-   margin:0.2em;
-   clear:both;
-   font-style:normal;
-   border-radius: 5px;
-   box-shadow:1px 1px 1px #ccc;
+  background: #1976d2;
+  display: inline-block;
+  float: left;
+  color: #fff;
+  padding: 0.2em 1em 0.2em;
+  margin: 0.2em;
+  clear: both;
+  font-style: normal;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #ccc;
 }
 
 .skill-item ul ul li em {
-   background: #BBDEFB;
-   color: #1976D2;
+  background: #bbdefb;
+  color: #1976d2;
 }
 
-
-
 .exclaimation {
-  font-family: Georgia, Times, 'Times New Roman', serif;
-   clear:both;
-   font-size:14px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  clear: both;
+  font-size: 14px;
 }
 
 /**
@@ -119,67 +120,61 @@ body {
 */
 
 .contact-banner {
-  background:#1976D2;
-  color:white;
-  text-align:center;
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  background: #1976d2;
+  color: white;
+  text-align: center;
+  font-family: Georgia, Times, "Times New Roman", serif;
   border-radius: 5px;
 }
 
 .contact-banner p {
-  padding:20px;
+  padding: 20px;
 }
 .contact-banner a {
-  color: #BBDEFB !important;
+  color: #bbdefb !important;
 }
 
 .contact-banner p em {
-    color:#fff;
-    font-weight:bold;
-    font-style:normal;
+  color: #fff;
+  font-weight: bold;
+  font-style: normal;
 }
 
 ul#social {
-    padding-top: 15px;
-    margin-left: -15px;
+  padding-top: 15px;
+  margin-left: -15px;
 }
 
 ul#social li {
-    display: inline;
+  display: inline;
 }
 
 ul#social li a {
-    background-color: #BBDEFB;
-    color: #1976D2;
-    padding: 5px 5px;
-    margin: 0px 5px;
-    text-decoration: none;
-    border-radius: 100px;
+  background-color: #bbdefb;
+  color: #1976d2;
+  padding: 5px 5px;
+  margin: 0px 5px;
+  text-decoration: none;
+  border-radius: 100px;
 }
 
 ul#social li a:hover {
-    background-color: #FFC107;
+  background-color: #ffc107;
 }
 
-
 .travels {
-
 }
 
 .travel_item {
-
 }
 
 .mapBox {
   position: absolute;
-  width:70%;
+  width: 70%;
   height: 50%;
   box-sizing: content-box;
-
 }
 
 .profile_pic {
   height: 470px;
-  background: url(assets/linkedinpic.jpg) top no-repeat;
-
 }
