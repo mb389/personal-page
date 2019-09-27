@@ -2,7 +2,16 @@ import React, { Component } from "react";
 
 const About = () => (
   <div className="about post banner">
-    <h2 className="post-title">About Me</h2>{" "}
+    <h2 className="post-title">
+      About Me{" "}
+      <span className="emoji-wrapper">
+        <span className="bracket">[</span>
+        <span className="emoji" role="img" aria-label="male-technologist">
+          👨‍💻
+        </span>
+        <span className="bracket">]</span>
+      </span>
+    </h2>{" "}
     <p>
       Born in the former Soviet Union and raised in Needham, MA, I've been
       living in NYC since graduating from{" "}

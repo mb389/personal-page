@@ -184,3 +184,12 @@ ul#social li a:hover {
   color: silver;
 }
 
+.emoji-wrapper {
+  padding-left: 10px;
+}
+
+.emoji-wrapper .emoji {
+  padding: 0 5px;
+}
+
+

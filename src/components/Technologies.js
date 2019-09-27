@@ -2,7 +2,16 @@ import React, { Component } from "react";
 
 const Technologies = () => (
   <div className="post clearfix">
-    <h2>Technologies I've Worked With</h2>
+    <h2>
+      Technologies I've Worked With
+      <span className="emoji-wrapper">
+        <span className="bracket">[</span>
+        <span className="emoji" role="img" aria-label="wrench">
+          🔧
+        </span>
+        <span className="bracket">]</span>
+      </span>
+    </h2>
     <div className="skill-categories">
       <div className="skill-item">
         <h4>Client Side</h4>
