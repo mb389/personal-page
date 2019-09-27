@@ -7,7 +7,6 @@ import routes from "./routes";
 require("./favicon.ico"); //Tell webpack to load favicon.ico
 
 import "./styles/index.css";
-import "./styles/styles.scss";
 
 render(
   <Router history={browserHistory} routes={routes} />,

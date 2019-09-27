@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "font-awesome/scss/font-awesome.scss";
+import "font-awesome/css/font-awesome.css";
+import React from "react";
 
 const Header = () => (
   <div className="masthead container">

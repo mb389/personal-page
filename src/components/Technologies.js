@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Technologies = () => (
   <div className="post clearfix">
@@ -28,9 +28,7 @@ const Technologies = () => (
             </li>
           </ul>
           <li>
-            <em>
-              <b>*</b>CSS / SCSS
-            </em>
+            <em>CSS / SCSS</em>
           </li>
         </ul>
       </div>

@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import { Link } from "react-router";
-import classNames from "classnames";
+import React from "react";
 
 import Home from "../components/Home";
 import Header from "../components/layout/Header";
