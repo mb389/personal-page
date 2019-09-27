@@ -48,7 +48,7 @@ const About = () => (
       financial products and services.
     </p>
     <p>
-      I'm currently a front end software engineer at{" "}
+      I'm currently a software engineer at{" "}
       <a href="http://coinbase.com" rel="noopener" target="_blank">
         Coinbase
       </a>

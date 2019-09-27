@@ -53,26 +53,9 @@ h6 {
   width: 100%;
 }
 
-/*
- * Container
- *
- * Center the page content.
- */
-
-.container {
-  max-width: 28rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 38em) {
+@media (max-width: 500px) {
   .container {
-    max-width: 32rem;
-  }
-}
-@media (min-width: 56em) {
-  .container {
-    max-width: 38rem;
+    padding: 0 1rem;
   }
 }
 
@@ -106,7 +89,7 @@ h6 {
   margin-left: 0.6em;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 600px) {
   .masthead-title {
     text-align: center;
   }
@@ -296,4 +279,3 @@ h6 {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
-

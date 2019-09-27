@@ -49,18 +49,21 @@ body {
 * Skill Boxes on Home Page
 */
 
-.skill-item .clearfix {
-  height: 25px;
+.skill-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 0 20px;
 }
 
-.skill-item {
-  float: left;
-  margin: 0 3.5em 2em 0;
-  font-size: 0.8em;
+@media (max-width: 800px) {
+  .skill-categories {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5px;
+  }
 }
 
 .skill-item h4 {
-  /*font-size:20px;*/
   font-weight: bold;
 }
 
@@ -162,6 +165,22 @@ ul#social li a:hover {
   padding: 0 25px;
 }
 
+.masthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .masthead {
+    flex-direction: column;
+  }
+  .social-links {
+    padding-top: 10px;
+  }
+}
+
 .bracket {
   color: silver;
 }
+
