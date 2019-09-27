@@ -2,7 +2,7 @@ import "font-awesome/css/font-awesome.css";
 import React from "react";
 
 const Header = () => (
-  <div className="masthead container">
+  <div className="masthead">
     <h3 className="masthead-title">
       <a href="/" title="Home">
         Michael Bushoy

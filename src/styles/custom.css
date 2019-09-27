@@ -171,6 +171,10 @@ ul#social li a:hover {
   align-items: center;
 }
 
+.masthead-title a {
+  color: #2196f3;
+}
+
 @media (max-width: 600px) {
   .masthead {
     flex-direction: column;
