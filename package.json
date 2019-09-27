@@ -11,7 +11,7 @@
     "remove-dist": "rimraf ./dist",
     "build:html": "babel-node tools/buildHtml.js",
     "prebuild": "npm run clean-dist && npm run build:html",
-    "build": "babel-node tools/build.js && npm run open:dist",
+    "build": "babel-node tools/build.js && npm run open:dist > http.log 2>&1 &",
     "test": "mocha tools/testSetup.js src/**/*.spec.js --reporter progress",
     "test:watch": "npm run test -- --watch"
   },
@@ -69,5 +69,9 @@
     "webpack": "1.13.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "3.3.9",
+    "webpack-command": "0.5.0"
   }
 }
