@@ -56,13 +56,13 @@ const About = () => (
       , a platform that's making it easier for small businesses to access
       financial products and services.
     </p>
-    <p>
+{/*    <p>
       I'm currently a software engineer at{" "}
       <a href="http://coinbase.com" rel="noopener" target="_blank">
         Coinbase
       </a>
       .
-    </p>
+    </p>*/}
   </div>
 );
 
