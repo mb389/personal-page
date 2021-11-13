@@ -27,16 +27,15 @@ const About = () => (
       Risk.{" "}
     </p>
     <p>
-      After 8 years at J.P. Morgan, I chose to leave to pursue my passion for
-      technology & the web, shortly thereafter enrolling at{" "}
+      After 8 years at J.P. Morgan, I chose to leave to pursue my love for
+      technology & the web, soon after enrolling at{" "}
       <a href="http://www.fullstackacademy.com" rel="noopener" target="_blank">
         Fullstack Academy of Code
       </a>
-      , a 17-week immersive program focusing on building web applications with
-      JavaScript.{" "}
+      , a 17-week immersive program focused on web application development.{" "}
     </p>
     <p>
-      Upon completing Fullstack, I joined{" "}
+      After Fullstack, I joined{" "}
       <a href="http://irisvr.com" rel="noopener" target="_blank">
         IrisVR
       </a>
@@ -45,24 +44,12 @@ const About = () => (
       viewing panoramic image files.{" "}
     </p>
     <p>
-      I've also worked at{" "}
-      <a href="http://staydomio.com" rel="noopener" target="_blank">
-        Domio
-      </a>
-      , a tech start-up reinventing the alternative lodging space, and{" "}
-      <a href="http://fundera.com" rel="noopener" target="_blank">
-        Fundera
-      </a>
-      , a platform that's making it easier for small businesses to access
-      financial products and services.
-    </p>
-{/*    <p>
-      I'm currently a software engineer at{" "}
+      I'm currently working as a software engineer at{" "}
       <a href="http://coinbase.com" rel="noopener" target="_blank">
         Coinbase
       </a>
       .
-    </p>*/}
+    </p>
   </div>
 );
 

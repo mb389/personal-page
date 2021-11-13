@@ -14,10 +14,9 @@ import routes from "..routes";
 import packagejson from "../../package.json";
 
 const headConfig = {
-  title: "<title>MB Portfolio</title>",
-  meta:
-    '<meta name="viewport" content="width=device-width, initial-scale=1" />',
-  link: '<link type="text/css" rel="stylesheet" href="/static/app.css"/>'
+  title: "<title>MB</title>",
+  meta: '<meta name="viewport" content="width=device-width, initial-scale=1" />',
+  link: '<link type="text/css" rel="stylesheet" href="/static/app.css"/>',
 };
 
 const app = express();
@@ -43,7 +42,7 @@ if (process.env.NODE_ENV !== "production") {
   app.use(
     webpackDevMiddleware(compiler, {
       noInfo: true,
-      publicPath: webpackConfig.output.publicPath
+      publicPath: webpackConfig.output.publicPath,
     })
   );
   app.use(webpackHotMiddleware(compiler));
@@ -51,7 +50,7 @@ if (process.env.NODE_ENV !== "production") {
   app.use("/static", express.static(__dirname + "/../../dist"));
 }
 
-app.get("/*", function(req, res) {
+app.get("/*", function (req, res) {
   const location = createLocation(req.url);
 
   match({ routes, location }, (err, redirectLocation, renderProps) => {
@@ -75,7 +74,7 @@ app.get("/*", function(req, res) {
   });
 });
 
-const server = app.listen(process.env.PORT || 3002, function() {
+const server = app.listen(process.env.PORT || 3002, function () {
   const host = server.address().address;
   const port = server.address().port;
   console.log("Listening at http://%s:%s", host, port);

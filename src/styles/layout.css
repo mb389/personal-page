@@ -11,21 +11,24 @@
  * Themes
  */
 
+
 /*
  * Global resets
  *
  * Update the foundational and global aspects of the page.
  */
 
+
 /* Prevent scroll on narrow devices */
+
 html,
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 html {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  background: #fafafa;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    background: #fafafa;
 }
 
 h1,
@@ -34,11 +37,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 400;
-  color: #313131;
-  letter-spacing: -0.025rem;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 400;
+    color: #313131;
+    letter-spacing: -0.025rem;
 }
+
 
 /*
  * Wrapper
@@ -49,15 +53,16 @@ h6 {
  */
 
 .wrap {
-  position: relative;
-  width: 100%;
+    position: relative;
+    width: 100%;
 }
 
 @media (max-width: 500px) {
-  .container {
-    padding: 0 1rem;
-  }
+    .container {
+        padding: 0 1rem;
+    }
 }
+
 
 /*
  * Masthead
@@ -66,37 +71,41 @@ h6 {
  */
 
 .masthead {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #eee;
-  background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    background: #fff;
 }
+
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #505050;
 }
+
 .masthead-title a {
-  color: #505050;
-  font-weight: bold;
+    color: #505050;
+    font-weight: bold;
 }
+
 .masthead-title small {
-  font-size: 75%;
-  font-weight: 400;
-  color: #c0c0c0;
-  letter-spacing: 0;
-  margin-left: 0.6em;
+    font-size: 75%;
+    font-weight: 400;
+    color: #c0c0c0;
+    letter-spacing: 0;
+    margin-left: 0.6em;
 }
 
 @media (max-width: 600px) {
-  .masthead-title {
-    text-align: center;
-  }
-  .masthead-title small {
-    display: none;
-  }
+    .masthead-title {
+        text-align: center;
+    }
+    .masthead-title small {
+        display: none;
+    }
 }
+
 
 /*
  *  and pages
@@ -107,75 +116,88 @@ h6 {
 
 .page,
 .post {
-  margin-bottom: 4em;
+    margin-bottom: 4em;
 }
 
 .banner {
-  margin-top: 2em;
-  margin-bottom: 4em;
+    margin-top: 1em;
+    margin-bottom: 3em;
 }
 
 .banner a {
-  border-bottom: 1px dotted #1976d2;
-  text-decoration: none;
+    border-bottom: 1px dotted #1976d2;
+    text-decoration: none;
 }
 
 .banner a:hover,
 .banner a:active .banner a:visited {
-  border-bottom: 2px dotted #1976d2;
+    border-bottom: 2px dotted #1976d2;
 }
 
+
 /* Blog post or page title */
+
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+    color: #303030;
 }
+
 .page-title,
 .post-title {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .post-title em {
-  background: #d9ead3;
-  color: #1976d2;
-  padding: 0em 0.3em 0em;
-  margin: 0.1em;
-  font-style: normal;
+    background: #d9ead3;
+    color: #1976d2;
+    padding: 0em 0.3em 0em;
+    margin: 0.1em;
+    font-style: normal;
 }
+
 
 /* Meta data line below post title */
+
 .post-date {
-  display: block;
-  margin-top: -0.5rem;
-  margin-bottom: 1rem;
-  color: #9a9a9a;
+    display: block;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
 }
 
+
 /* Related posts */
+
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #eee;
 }
+
 .related-posts {
-  padding-left: 0;
-  list-style: none;
+    padding-left: 0;
+    list-style: none;
 }
+
 .related-posts h3 {
-  margin-top: 0;
+    margin-top: 0;
 }
+
 .related-posts li small {
-  font-size: 75%;
-  color: #999;
+    font-size: 75%;
+    color: #999;
 }
+
 .related-posts li a:hover {
-  color: #1976d2;
-  text-decoration: none;
+    color: #1976d2;
+    text-decoration: none;
 }
+
 .related-posts li a:hover small {
-  color: inherit;
+    color: inherit;
 }
+
 
 /*
  * Themes
@@ -184,98 +206,122 @@ h6 {
  * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
  */
 
+
 /* Red */
+
 .theme-base-08 .sidebar,
 .theme-base-08 .sidebar-toggle:active,
-.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #ac4142;
+.theme-base-08 #sidebar-checkbox:checked~.sidebar-toggle {
+    background-color: #ac4142;
 }
+
 .theme-base-08 .container a,
 .theme-base-08 .sidebar-toggle,
 .theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
+    color: #ac4142;
 }
 
+
 /* Orange */
+
 .theme-base-09 .sidebar,
 .theme-base-09 .sidebar-toggle:active,
-.theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #d28445;
+.theme-base-09 #sidebar-checkbox:checked~.sidebar-toggle {
+    background-color: #d28445;
 }
+
 .theme-base-09 .container a,
 .theme-base-09 .sidebar-toggle,
 .theme-base-09 .related-posts li a:hover {
-  color: #d28445;
+    color: #d28445;
 }
 
+
 /* Yellow */
+
 .theme-base-0a .sidebar,
 .theme-base-0a .sidebar-toggle:active,
-.theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #f4bf75;
+.theme-base-0a #sidebar-checkbox:checked~.sidebar-toggle {
+    background-color: #f4bf75;
 }
+
 .theme-base-0a .container a,
 .theme-base-0a .sidebar-toggle,
 .theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
+    color: #f4bf75;
 }
 
+
 /* Green */
+
 .theme-base-0b .sidebar,
 .theme-base-0b .sidebar-toggle:active,
-.theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #90a959;
+.theme-base-0b #sidebar-checkbox:checked~.sidebar-toggle {
+    background-color: #90a959;
 }
+
 .theme-base-0b .container a,
 .theme-base-0b .sidebar-toggle,
 .theme-base-0b .related-posts li a:hover {
-  color: #90a959;
+    color: #90a959;
 }
 
+
 /* Cyan */
+
 .theme-base-0c .sidebar,
 .theme-base-0c .sidebar-toggle:active,
-.theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #75b5aa;
+.theme-base-0c #sidebar-checkbox:checked~.sidebar-toggle {
+    background-color: #75b5aa;
 }
+
 .theme-base-0c .container a,
 .theme-base-0c .sidebar-toggle,
 .theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
+    color: #75b5aa;
 }
 
+
 /* Blue */
+
 .theme-base-0d .sidebar,
 .theme-base-0d .sidebar-toggle:active,
-.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #1976d2;
+.theme-base-0d #sidebar-checkbox:checked~.sidebar-toggle {
+    background-color: #1976d2;
 }
+
 .theme-base-0d .container a,
 .theme-base-0d .sidebar-toggle,
 .theme-base-0d .related-posts li a:hover {
-  color: #2196f3;
+    color: #2196f3;
 }
 
+
 /* Magenta */
+
 .theme-base-0e .sidebar,
 .theme-base-0e .sidebar-toggle:active,
-.theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #aa759f;
+.theme-base-0e #sidebar-checkbox:checked~.sidebar-toggle {
+    background-color: #aa759f;
 }
+
 .theme-base-0e .container a,
 .theme-base-0e .sidebar-toggle,
 .theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
+    color: #aa759f;
 }
 
+
 /* Brown */
+
 .theme-base-0f .sidebar,
 .theme-base-0f .sidebar-toggle:active,
-.theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #8f5536;
+.theme-base-0f #sidebar-checkbox:checked~.sidebar-toggle {
+    background-color: #8f5536;
 }
+
 .theme-base-0f .container a,
 .theme-base-0f .sidebar-toggle,
 .theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
+    color: #8f5536;
 }
