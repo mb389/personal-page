@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 import proScreenImg from "../assets/pro.jpg";
 import ratScreenImg from "../assets/rat.jpg";
 
 const About = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  window.addEventListener("resize", function () {
-    setWidth(window.innerWidth);
-  });
   const imageGutterWidth = (window.innerWidth - 300) / 2;
   const hoverImageStyles =
     window.innerWidth > 800
