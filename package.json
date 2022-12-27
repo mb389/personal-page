@@ -1,6 +1,6 @@
 {
-    "name": "MB-Portfolio",
-    "version": "2.0.0",
+    "name": "MB-Personal-Page",
+    "version": "3.0.0",
     "scripts": {
         "start-message": "babel-node tools/startMessage.js",
         "prestart": "npm-run-all --parallel start-message remove-dist",
