@@ -1,13 +1,12 @@
-# MB Portfolio App
-
+# Personal Page App
 
 ## Development Installation
 
 In the project's directory, run the following commands:
 
 ```
-$ npm install
-$ npm start
+$ yarn
+$ yarn start
 ```
 
 Then Visit
@@ -23,7 +22,7 @@ Production has Devtools, logging and hot reloading middleware removed and the sc
 In the project's directory, run the following commands:
 
 ```
-$ npm run build
+$ yarn build
 ```
 
 Then Visit

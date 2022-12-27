@@ -17,9 +17,6 @@
         "test:watch": "npm run test -- --watch"
     },
     "author": "Michael Bushoy",
-    "engines": {
-        "node": "11.13.0"
-    },
     "license": "MIT",
     "dependencies": {
         "axios": "0.11.0",
