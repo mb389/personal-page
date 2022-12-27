@@ -14,7 +14,8 @@
         "prebuild": "npm run clean-dist && npm run build:html",
         "build": "babel-node tools/build.js",
         "test": "mocha tools/testSetup.js src/**/*.spec.js --reporter progress",
-        "test:watch": "npm run test -- --watch"
+        "test:watch": "npm run test -- --watch",
+        "deploy": "sh scripts/deploy.sh"
     },
     "author": "Michael Bushoy",
     "license": "MIT",
